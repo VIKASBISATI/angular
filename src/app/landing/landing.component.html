@@ -1,0 +1,21 @@
+<div class="landing-page-wrapper">
+  <div class="header">
+    <span>FundooNotes</span>
+  </div>
+  <div class="card-wrapper">
+    <h2>FundooNotes offered, choose below service to Register</h2>
+    <div class="cards">
+      <mat-card
+        class="service-card"
+        (click)="storeProductId(data.id)"
+        *ngFor="let data of services"
+      >
+        <p>Price: ${{ data.price }} per month</p>
+        <p>{{ data.name.toUpperCase() }}</p>
+        <p>${{ data.price }} per month</p>
+        <p>{{ data.description }}</p>
+      </mat-card>
+    </div>
+    <a href="">Sign in instead</a>
+  </div>
+</div>

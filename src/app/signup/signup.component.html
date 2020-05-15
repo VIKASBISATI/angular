@@ -1,0 +1,72 @@
+<div fxLayoutAlign="center center" fxFlexFill class="login-wrapper">
+  <mat-card fxFlex="45">
+    <div class="signup-header">
+      <h1>
+        <span style="color:blue">F</span>
+        <span style="color:red">u</span>
+        <span style="color:green">n</span>
+        <span style="color:green">d</span>
+        <span style="color:orange">o</span>
+        <span style="color:red">o</span>
+      </h1>
+      <button mat-button (click)="navigateToCart()">
+        Go to cart
+      </button>
+    </div>
+    <h1>Create your Fundoo account</h1>
+    <mat-form-field>
+      <mat-label>FirstName</mat-label>
+      <input
+        matInput
+        placeholder="UserName"
+        type="text"
+        [(ngModel)]="firstName"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>LastName</mat-label>
+      <input
+        matInput
+        placeholder="UserName"
+        type="text"
+        [(ngModel)]="lastName"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email Id</mat-label>
+      <input
+        matInput
+        placeholder="UserName"
+        type="text"
+        [(ngModel)]="email"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        placeholder="UserName"
+        type="password"
+        [(ngModel)]="password"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>ConfirmPassword</mat-label>
+      <input
+        matInput
+        placeholder="UserName"
+        type="password"
+        [(ngModel)]="confirmPassword"
+        required
+      />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="register()">
+      Signup
+    </button>
+  </mat-card>
+  <app-landing></app-landing>
+</div>
